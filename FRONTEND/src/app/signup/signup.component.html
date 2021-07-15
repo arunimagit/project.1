@@ -1,0 +1,50 @@
+<!--<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/download.png" alt="" width="50px" height="50px" class="d-inline-block align-text-top">
+            ICT ACADEMY OF KERALA
+        </a>
+        <ul>
+            <li><a routerLink="/home">Home</a></li>
+        </ul>
+    </div>
+</nav>-->
+
+
+<div class="row signupform-cont">  
+    <div class="col-lg-4 signupform">
+        <!-- <h class=" signupheading"></h4><br> -->
+      <form #usersignup="ngForm" (ngSubmit)="Userdata()" >
+          
+          <label for="full name">Fullname</label>
+          <input type="text" class="form-control" #fullname="ngModel" id="fullname" placeholder="Full name" [(ngModel)]="user.fullname" name="fullname" required />
+          <label for="error" class="text-danger" *ngIf="fullname.touched && fullname.invalid"> Please give your Name</label>
+          <br>
+        
+          <label for="email">Email</label>
+          <input type="text" class="form-control" #email="ngModel"  id="email" name="email" [(ngModel)]="user.email"  pattern="^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+)[.]([a-z]{2,3})(.[a-z]{2,3})?$" placeholder="email@example.com" required />
+          <label for="error" class="text-danger" *ngIf="email.touched && email.invalid">Invalid Email</label><br>
+        
+          <label for="Password">Password</label>
+          <input type="password" (keyup)="validatepassword();" #password="ngModel" [(ngModel)]="user.password" class="form-control" id="password" placeholder="Password" name="password" required />
+          <small class="text-danger" id="passerror" *ngIf="password.touched && password.invalid">Type Password</small>
+          <label for="passworderror"  class="{{textcolor}}" id="passerror">{{pwdstrength}}</label><br>
+        
+          <label for="confirm Password">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmpwd" #confirmpwd="ngModel" [(ngModel)]="user.confirmpwd" name="confirmpwd" placeholder=" Confirm Password" required />
+          <label for="confirm password error"  class="text-danger" >{{errormsg}}</label> <br>
+
+        <button type="submit" id="submit" [disabled]="usersignup.form.invalid" class="btn btn-primary btnlogin">Submit</button>
+      </form>
+    </div> 
+  </div>
+  
+
+  
+
+
+
+
+
+
+

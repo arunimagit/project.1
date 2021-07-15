@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/image/backgnd.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.navbar-brand {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 2rem;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+.navbar li {
+    float: left;
+  }
+  
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ .title{
+     width: 100%;
+     height: 10vh;
+     display: flex;
+     justify-content: center;
+ }
+
+ .title p{
+    margin-top: 10vh;
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+ }
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+
+.content .leftcontent{
+    color:black;
+    font-family: 'STIX Two Math', serif;
+    font-size: 1.5rem;
+}
+
+.content .rightcontent{
+    color: black;
+    font-family: 'STIX Two Math', serif;
+    font-size: 1.5rem;
+}
+
+.container .card{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent; 
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+}
+
+.formcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forms{
+    margin-top: 50px;
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid beige;
+    background-color: rgb(241, 233, 233);
+
+}
+.forms input{
+    width: 25vw;
+    margin-left: 2vw;
+}
+.forms label{
+    margin-left: 2vw;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.forms .layouts{
+    
+    height: 6ovh;
+    width: 30vw;
+    margin-top: 5vh;
+}
+.forms .layouts button{
+    margin-left: 11vw;
+    margin-top: 10px;
+}
+.layouts button a{
+    text-decoration: none;
+    color:white;
+}
+.signupform-cont{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-image: linear-gradient(to bottom right, rgb(12, 12, 12), rgb(153, 149, 149));
+    
+   }
+   .signupform{
+    padding: 20px;
+    color: white;
+    border: 1px solid white;
+    
+  }
